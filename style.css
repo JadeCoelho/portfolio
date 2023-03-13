@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+
+:root {
+  --claro-bg-claro: #ffeeec;
+  --claro-bg-sobre: #fff;
+  --claro-bg-header: #fdd2d2b4;
+  --claro-principal: #ffa0a0eb;
+  --claro-cor-fraca: #861d2f76;
+  --claro-cor-media: #651922b4;
+  --claro-cor-forte: #601418aa;
+  --claro-gradiente-btn: #ffb0b0, #ff9292;
+  --claro-cor-shadow: #7c59553b;
+
+  --escuro-bg-claro: #575364;
+  --escuro-bg-sobre: #3a383d;
+  --escuro-bg-header: #3a383db8;
+  --escuro-principal: #8c8af6;
+  --escuro-cor-fraca: #cfcfcfb0;
+  --escuro-cor-media: #c6c6c6b4;
+  --escuro-cor-forte: #e9e9e9aa;
+  --escuro-gradiente-btn: #a7a5ff, #7a77f8;
+  --escuro-cor-shadow: #00000062;
+}
+.claro {
+  --bg-claro: var(--claro-bg-claro);
+  --bg-portfolio: var(--claro-bg-portfolio);
+  --bg-sobre: var(--claro-bg-sobre);
+  --bg-header: var(--claro-bg-header);
+  --principal: var(--claro-principal);
+  --cor-fraca: var(--claro-cor-fraca);
+  --cor-media: var(--claro-cor-media);
+  --cor-forte: var(--claro-cor-forte);
+  --gradiente-btn: var(--claro-gradiente-btn);
+  --cor-shadow: var(--claro-cor-shadow);
+}
+.escuro {
+  --bg-claro: var(--escuro-bg-claro);
+  --bg-portfolio: var(--escuro-bg-portfolio);
+  --bg-sobre: var(--escuro-bg-sobre);
+  --principal: var(--escuro-principal);
+  --bg-header: var(--escuro-bg-header);
+  --cor-fraca: var(--escuro-cor-fraca);
+  --cor-media: var(--escuro-cor-media);
+  --cor-forte: var(--escuro-cor-forte);
+  --gradiente-btn: var(--escuro-gradiente-btn);
+  --cor-shadow: var(--escuro-cor-shadow);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-claro);
+  overflow-x: hidden;
+}
+.header {
+  background: var(--bg-header);
+  height: 500px;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+nav i {
+  padding: 8px;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: var(--principal);
+  cursor: pointer;
+}
+.meu-nome {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--principal);
+  font-weight: 500;
+}
+
+.i-coelho {
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: troca 5s ease infinite;
+}
+
+@keyframes troca {
+  0%,
+  100% {
+    background-image: url("imgs/hi.png");
+  }
+  25% {
+    background-image: url("imgs/smile.png");
+  }
+  50% {
+    background-image: url("imgs/love.png");
+  }
+  75% {
+    background-image: url("imgs/cool-.png");
+  }
+}
+
+.ola {
+  width: 95vw;
+  height: 30vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--cor-fraca);
+  font-size: 21px;
+}
+
+.body {
+  position: relative;
+  margin: 0 auto;
+  width: 95vw;
+  top: -100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre {
+  background-color: var(--bg-sobre);
+  width: 33%;
+  height: fit-content;
+  border-radius: 8px;
+  box-shadow: 2px 4px 15px var(--cor-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.img-perfil img {
+  width: 160px;
+  border-radius: 50%;
+  border: 6px solid var(--principal);
+}
+.img-perfil {
+  position: relative;
+  text-align: center;
+  top: -50px;
+  margin-bottom: -30px;
+}
+.sobre-info {
+  text-align: center;
+  color: var(--cor-forte);
+}
+
+.email,
+.local {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--cor-media);
+}
+.sobre .midias {
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+  margin-top: -10px;
+}
+
+.midias li a {
+  color: var(--principal);
+  padding: 10px;
+  display: flex;
+  box-shadow: 1px 1px 5px var(--cor-shadow);
+}
+
+.midias li:hover a {
+  background-color: var(--principal);
+  color: #fff;
+}
+
+.sobre .resumo {
+  color: var(--cor-media);
+  text-align: center;
+  padding: 30px 0 0 0;
+  border-top: 1px solid var(--principal);
+  width: 90%;
+}
+
+.sobre .curriculo {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--cor-fraca);
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.curriculo:hover {
+  background-color: var(--principal);
+}
+
+.portfolio {
+  width: 65%;
+  background-color: var(--bg-claro);
+  height: fit-content;
+  border-radius: 8px;
+  box-shadow: 2px 4px 15px var(--cor-shadow);
+}
+.portfolio h3 {
+  background-color: var(--bg-sobre);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 25px;
+  font-weight: normal;
+  color: var(--cor-media);
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.portfolio .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 30px;
+  position: relative;
+  row-gap: 20px;
+}
+.portfolio .card {
+  background-color: transparent;
+  height: 150px;
+  width: 230px;
+  position: relative;
+  display: flex;
+  color: #fff;
+  margin: 0 auto;
+}
+.img-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  filter: brightness(50%) blur(0.5px);
+  box-shadow: 0px 3px 10px var(--cor-shadow);
+}
+
+.portfolio .info-card {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.info-card .titulo-card {
+  text-transform: uppercase;
+}
+.info-card a {
+  text-transform: capitalize;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, var(--gradiente-btn));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.info-card a:hover {
+  background: linear-gradient(195deg, var(--gradiente-btn));
+}
+
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  color: var(--cor-fraca);
+  padding: 15px 0;
+}
+
+

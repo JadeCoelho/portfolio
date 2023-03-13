@@ -1,0 +1,59 @@
+@media (max-width: 850px) {
+  .header {
+    height: 50vh;
+  }
+  .ola {
+    font-size: 18px;
+  }
+  .i-coelho {
+    width: 70px;
+    height: 70px;
+  }
+  .body {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+  .sobre,
+  .portfolio {
+    width: 80%;
+  }
+  .sobre {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    height: 65vh;
+  }
+  nav {
+    padding: 15px 20px;
+  }
+  nav i {
+    padding: 7px;
+    font-size: 20px;
+  }
+  .ola {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .i-coelho {
+    width: 60px;
+    height: 60px;
+  }
+  .sobre,
+  .portfolio {
+    width: 90%;
+  }
+  .sobre {
+    margin-top: 0px;
+  }
+  .img-perfil img {
+    width: 130px;
+  }
+  .portfolio h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+}
