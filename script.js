@@ -58,6 +58,11 @@ const projetos = [
     src: "roleta",
     href: "https://jadecoelho.github.io/roleta-sbt/",
   },
+  {
+    titulo: "Flashcards",
+    src: "flashcards",
+    href: "https://jadecoelho.github.io/flashcards/",
+  },
 ];
 function criaCards() {
   let card;

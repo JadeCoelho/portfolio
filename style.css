@@ -197,7 +197,7 @@ nav i {
   width: 90%;
 }
 
-.sobre .curriculo {
+/* .sobre .curriculo {
   padding: 10px 12px;
   border: none;
   border-radius: 5px;
@@ -209,7 +209,7 @@ nav i {
 
 .curriculo:hover {
   background-color: var(--principal);
-}
+} */
 
 .portfolio {
   width: 65%;
